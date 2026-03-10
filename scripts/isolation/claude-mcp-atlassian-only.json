@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "mcp-atlassian": {
+      "command": "bash",
+      "args": [
+        "-lc",
+        "mkdir -p /Volumes/Data/_ai/mcp-data/mcp-atlassian && cd /Volumes/Data/_ai/mcp-data/mcp-atlassian && set -a && [ -f .env ] && source .env && set +a && exec /Volumes/Data/_ai/mcp-working-cache/mcp-venv-cache/mcp-atlassian/bin/mcp-atlassian"
+      ]
+    }
+  }
+}

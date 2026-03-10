@@ -59,6 +59,19 @@ Ask your AI assistant to:
 - **"Create a bug ticket for the login issue"**
 - **"Update the status of PROJ-123 to Done"**
 
+## Atlassian-Only Isolation Launchers
+
+For local hard isolation (so no other MCP servers are loaded in the session), use:
+
+- Codex: `scripts/isolation/start-codex-atlassian-only.sh`
+- Claude Code: `scripts/isolation/start-claude-atlassian-only.sh`
+
+Notes:
+- Both launchers run only `mcp-atlassian` and source credentials from:
+  `/Volumes/Data/_ai/mcp-data/mcp-atlassian/.env`
+- Claude launcher uses `--strict-mcp-config` with:
+  `scripts/isolation/claude-mcp-atlassian-only.json`
+
 ## Documentation
 
 Full documentation is available at **[mcp-atlassian.soomiles.com](https://mcp-atlassian.soomiles.com)**.
