@@ -304,3 +304,7 @@ Auto-maintained by `my-github-mcp` on `git_push`.
 | 2026-03-10T07:05:40.568925+00:00 | main | origin | `d9d96826e373` | feat(confluence): add include_content for create/update (#1098) |
 | 2026-03-10T07:05:40.568925+00:00 | main | origin | `8e84d747cd06` | fix(confluence): improve include_content test coverage and descriptions (#1099) |
 | 2026-03-10T07:05:40.568925+00:00 | main | origin | `08307aa7e901` | docs: add codex/claude atlassian-only isolation launchers |
+
+## 2026-03-13
+- Recorded and prepared local enhancements for publication.
+- Updated repository documentation to reflect current operational and integration changes.

@@ -3,5 +3,5 @@ set -euo pipefail
 
 # Starts Codex with ONLY mcp-atlassian configured for this session.
 exec codex \
-  -c 'mcp_servers={"mcp-atlassian"={command="bash",args=["-lc","mkdir -p /Volumes/Data/_ai/mcp-data/mcp-atlassian && cd /Volumes/Data/_ai/mcp-data/mcp-atlassian && set -a && [ -f .env ] && source .env && set +a && exec /Volumes/Data/_ai/mcp-working-cache/mcp-venv-cache/mcp-atlassian/bin/mcp-atlassian"],startup_timeout_sec=120}}' \
+  -c 'mcp_servers={"mcp-atlassian"={command="bash",args=["-lc","mkdir -p /Volumes/Data/_ai/_mcp/mcp-data/mcp-atlassian/{config,data,logs,backups} /Volumes/Data/_ai/_mcp/mcp-runtime/mcp-atlassian /Volumes/Data/_ai/_mcp/mcp-working-cache/mcp-atlassian && cd /Volumes/Data/_ai/_mcp/mcp-runtime/mcp-atlassian && set -a && [ -f /Volumes/Data/_ai/_mcp/mcp-data/mcp-atlassian/config/.env ] && source /Volumes/Data/_ai/_mcp/mcp-data/mcp-atlassian/config/.env && set +a && exec /Volumes/Data/_ai/_mcp/mcp-working-cache/mcp-atlassian/venv/bin/mcp-atlassian"],startup_timeout_sec=120}}' \
   "$@"
